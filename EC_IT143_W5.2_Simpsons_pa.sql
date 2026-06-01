@@ -1,24 +1,19 @@
 /* =========================================
    EC_IT143 Week 5.2 Assignment
-   Dataset: MyFC
+   Dataset: Simpsons
    Student: Prince Agyei
    ========================================= */
 
-   
--- Q1: How many players are in the team?
+   -- Q1: How many players are in the team?
 -- Author: Me
 SELECT COUNT(*) AS TotalPlayers
 FROM dbo.tblplayerdim;
+
 
 -- Q2: How many teams are there?
 -- Author: Me
 SELECT COUNT(*) AS TotalTeams
 FROM dbo.tblteamdim;
-
--- Q3: What is the average age of players?
--- Author: Me
-SELECT AVG(Age) AS AvgAge
-FROM Players;
 
 
 -- Q3: Which player has the highest salary?
@@ -26,3 +21,8 @@ FROM Players;
 SELECT TOP 1 Name, Salary
 FROM Players
 ORDER BY Salary DESC;
+
+-- Q2: What is the average age of players?
+-- Author: Me
+SELECT AVG(Age) AS AvgAge
+FROM Players;
